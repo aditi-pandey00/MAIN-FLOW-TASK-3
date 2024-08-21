@@ -1,0 +1,51 @@
+<nav class="navbar navbar-light bg-primary">
+  <div class="container-fluid">
+    <h2>To Do Tracker </h2>
+    <!-- <div class="d-flex">
+        <button routerLink="/header" class="btn btn-danger mx-3">Go Back To Main Page</button>
+      </div> -->
+  </div>
+</nav>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <div class="card">
+        <div class="text-center">
+          <h1>LOGIN</h1>
+          <h5>
+            put details to login </h5>
+          <hr>
+        </div>
+        <form (ngSubmit)="logIn(feedbackForm)" #feedbackForm="ngForm">
+
+          <div class="mb-3">
+            <label for="email">User Email</label>
+            <input class="form-control" type="text" name="emailId" #emailId="ngModel" placeholder="Enter User Email"
+              [(ngModel)]="feedback.emailId" required>
+            <div *ngIf="emailId?.invalid && (emailId?.dirty || emailId?.touched)">
+              <div class="changewarningcolor" *ngIf="emailId?.errors?.['required']">
+                E-mail is required*
+              </div>
+            </div>
+          </div>
+          <div class="mb-3">
+            <label for="password">User Password</label>
+            <input class="form-control" type="password" matInput name="password" #password="ngModel"
+              placeholder="Enter Your Password" [(ngModel)]="feedback.password" required minlength="5">
+            <div class="changewarningcolor" *ngIf="password?.invalid && (password?.dirty || password?.touched)">
+              <div class="changewarningcolor" *ngIf="password?.errors?.['required']">
+                password is required*
+              </div>
+              <div class="changewarningcolor" *ngIf="password?.errors?.['minlength']">
+                please enter valid password leghth
+              </div>
+            </div>
+          </div>
+          <button class="btn btn-primary" type="submit" [disabled]="feedbackForm.invalid" id="Button">Login</button><br>
+          <a routerLink="/register"><strong>New User ? Click Here.. </strong></a>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

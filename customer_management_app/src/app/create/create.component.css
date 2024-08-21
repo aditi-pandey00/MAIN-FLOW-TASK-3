@@ -1,0 +1,23 @@
+.card {
+    margin-top: 15px;
+    border: 2px solid rgb(226, 108, 58);
+    width: 750px;
+    padding: 45px;
+    position: absolute;
+    top: 10%;
+    left: 30%;
+    display: flex;
+}
+
+a {
+    margin-top: 15px;
+}
+
+button {
+    margin-left: 42%;
+}
+
+h1 {
+    background-color: rgb(218, 100, 50);
+    color: white;
+}

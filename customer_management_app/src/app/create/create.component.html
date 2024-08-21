@@ -1,0 +1,56 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="text-center">
+                    <h1>ADD NEW Task</h1>
+                </div>
+                <hr>
+                <form>
+                    <div class="mb-3">
+                        <label class="form-label">Task Name</label>
+                        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                            name="taskName" [(ngModel)]="task.taskName">
+
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Task Content</label>
+                        <input type="text" class="form-control" id="exampleInputPassword1" name="taskContent"
+                            [(ngModel)]="task.taskContent">
+                    </div>
+                    <button type="submit" (click)="function1()" class="btn btn-success">ADD</button>
+
+                </form>
+                <a routerLink="/home">No Need to add go back!!</a>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+<!-- <form >
+    <div class="mb-3">
+        <label class="form-label">userName</label>
+        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="last_name" [(ngModel)]="customer.userName" >
+
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Email</label>
+        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="address" [(ngModel)]="customer.email" >
+      
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Password</label>
+        <input type="text" class="form-control" id="exampleInputPassword1" name="city" [(ngModel)]="customer.phone" >
+    </div>
+    <button type="submit" (click)="function1()" class="btn btn-success">ADD</button>
+
+</form> -->

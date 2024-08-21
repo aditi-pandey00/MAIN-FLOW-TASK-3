@@ -1,0 +1,33 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="text-center">
+                    <h1>User Registration Form</h1>
+                </div>
+                <hr>
+                <form>
+                    <div class="mb-3">
+                        <label class="form-label">user Name</label>
+                        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                            name="userName" [(ngModel)]="user.userName">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Email</label>
+                        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                            name="emailId" [(ngModel)]="user.emailId">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Password</label>
+                        <input type="text" class="form-control" id="exampleInputPassword1" name="password"
+                            [(ngModel)]="user.password">
+                    </div>
+                    <button type="submit" (click)="function1()" class="btn btn-success">Submit</button>
+                </form>
+                <br>
+                <span><a routerLink="/login">No Need to Register go back!!</a></span>
+
+            </div>
+        </div>
+    </div>
+</div>

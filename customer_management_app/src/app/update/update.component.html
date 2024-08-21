@@ -1,0 +1,34 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="text-center">
+                    <h1>Update Your Task</h1>
+                    <h5>Here.... </h5>
+                </div>
+                <hr>
+                <form (submit)="updateTask()">
+
+                    <div class="mb-3">
+                        <label class="form-label">Task Name</label>
+                        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                            name="taskName" [(ngModel)]="task.taskName">
+
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Task Content</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                            name="taskContent" [(ngModel)]="task.taskContent">
+
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">update</button>
+
+                </form>
+                <a routerLink="/home">N0 Need to update go back!!</a>
+
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,50 @@
+
+
+.card{
+    margin-top: 15px;
+    border: 5px solid rgb(221, 168, 21);
+    width : 550px;
+    padding: 45px;
+    position: absolute;
+    background-color: blanchedalmond;
+    top: 25%;
+    left:35%;
+}
+
+.text-center{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+a{
+    margin-top: 15px;
+}
+#second-txt{
+    position: absolute;
+    top: 13px;
+    left: 1680px;
+} 
+h2{
+    color: rgb(247, 247, 245);
+    font-size: xx-large;
+    font-weight: bolder;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 5px;
+    margin-left: 55px;
+    
+}
+
+
+.form-control:focus:valid {
+   
+    box-shadow: 0 0 0 0.2rem rgba(18, 232, 6, 0.25);
+    opacity: 0.9;
+} 
+
+
+.form-control:focus:invalid {
+   
+    box-shadow: 0 0 0 0.2rem rgba(233, 17, 10, 0.918);
+    opacity: 0.5;
+}
+.changewarningcolor{
+    color: brown;
+}

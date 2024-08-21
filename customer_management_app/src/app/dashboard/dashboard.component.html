@@ -1,0 +1,71 @@
+<nav class="navbar navbar-light bg-primary navbar-expand-lg">
+  <div class="container-fluid">
+    <h2>To Do Tracker </h2>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <div class="d-flex ms-auto">
+        <button routerLink="/create" class="btn btn-danger mx-3">Add-Task</button>
+        <button (click)="logOut()" class="btn btn-danger mx-3">Log-Out</button>
+      </div>
+    </div>
+  </div>
+</nav>
+<div class="additional-section">
+  <h3>Welcome {{user.userName}}</h3>
+  <h6>{{user.emailId}}</h6>
+</div>
+<div class="container-fluid card-container">
+  <div class="card" *ngFor="let x of tasks">
+    <div class="card-body">
+      <h5 class="card-title">{{x.taskName}}</h5>
+      <h6 class="card-subtitle mb-2 text-muted">Priority Task</h6>
+      <p class="card-text">{{x.taskContent}}</p>
+      <a (click)="update(x.taskId)" class="card-link">Update Task</a>
+      <a (click)="delete(x.taskId)" class="card-link">Delete Task</a>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <form  [formGroup]="myReactiveForm" (ngSubmit)="logIn()">
+  
+                  <div class="mb-3">
+                    <label for="email">User Name</label>
+                    <input type="text" class="form-control" id="email" autocomplete="off" formControlName="email" placeholder="enter admin email">
+                  </div>
+  
+                  <div class="mb-3">
+                    <label for="password">User Name</label>
+                    <input type="password" class="form-control" id="password" formControlName="password" placeholder="enter admin password">
+                  </div>
+               
+                  <button type="submit" class="btn btn-primary">login</button>
+  
+                </form> -->
